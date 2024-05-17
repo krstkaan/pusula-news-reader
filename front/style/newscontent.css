@@ -1,4 +1,32 @@
-.icon{
+#containernews {
+        margin-top: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        max-width: 1140px;
+    }
+    .news-title {
+        color: #007bff;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .news-image {
+        width: 800px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .news-content {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+    .section-image{
+     width: 800px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .icon{
  height: 50px;
  width: 50px
 }
@@ -247,123 +275,4 @@ i:hover{
     position: absolute;
     z-index: 200;
     border-bottom-right-radius: 10px ;
-}
-@import url('https://fonts.googleapis.com/css?family=Oswald');
- @import url('https://fonts.googleapis.com/css?family=Lato');
-
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-}
-a {
-  text-decoration: none;
-}
-
-.wrap{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  grid-gap:10px;
-  padding:0.5em;
-  perspective:500px;
-}
-.article {
-  display:flex;
-  flex-direction:column;
-  height:300px;
-  position:relative;
-  background-size:cover;
-  border-radius:7px;
-  overflow:hidden;
-  padding:1em;
-  cursor:pointer;
-  transform: rotateX(0deg) rotateY(0deg);
-  transition: all 0.2s linear ;
-  will-change: transform;
-}
-
-
-
-
-.overlay {
-  width:100%;
-  height:100%;
-  background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.3) 20%,rgba(0,0,0,0.4) 50%);
-  position:absolute;
-  left:0;
-  top:0;
-  z-index:1;
-}
-.article h1{
-  font-size:1.5em;
-  font-family:'Oswald';
-  margin-top:auto;
-  cursor:pointer;
-  transition:all 0.3s;
-  position:relative;
-  z-index:2;
-  pointer-events:none;
-}
-
-.article h1{
-  transform:translateY(-20px)
-}
-.article h1 span{
-  color:#fff;
-}
-
-.article span.cat {
-  letter-spacing:2px;
-  font-weight:bold;
-  font-family: 'Lato', sans-serif;
-  position:relative;
-  z-index:2;
-  pointer-events:none;
-  overflow:hidden;
-  color:#fff;
-}
-
-@media screen and (min-width:1000px){
-  .wrap{
-    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-    grid-gap:20px;
-    padding:1em;
-  }
-  .article h1{
-    transform:translateY(0px);
-  }
-  .article:hover h1{
-  transform:translateY(-20px)
-  }
-  
-  .article span.cat {
-    color:transparent;
-  }
-  
-.article span.cat::before,.article span.cat::after{
-  content:attr(data-hover);
-  position:absolute;
-  display:inline-block;
-  left:0;
-  top:0;
-  white-space: nowrap;
-  overflow:hidden;
-  max-width:0%;
-  transition:max-width 300ms ease-out; 
-}
-.article span.cat::before {
-  color:yellow;
-  transition-delay:100ms;
-}
-.article span.cat::after {
-  color:white;
-}
-
-.article:hover span.cat:after,.article:hover span.cat:before{
-  max-width:100%;
-}
-
-.article:hover span.cat:after {
-  transition-delay:300ms;
-}
 }
