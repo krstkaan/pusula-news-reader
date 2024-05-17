@@ -21,6 +21,9 @@
 .custom-shape-divider-top-1715760239 .shape-fill {
  fill: #FFFFFF;
 }
+a{
+ text-decoration: none;
+}
 
 body{
  background: #fffaf0;
