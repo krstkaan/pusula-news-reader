@@ -130,6 +130,15 @@
                 </li>              
               </ul>
             </li>
+            <li class="nav-item ">
+              <a href="comments.html" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Yorumlar
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              </li>
             
           </ul>
         </nav>
@@ -142,7 +151,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Yönetici Hesabı Oluşturma</h1>
+            <h1 class="m-0">Moderator Hesabı Oluşturma</h1>
           </div><!-- /.col -->
          
         </div><!-- /.row -->
@@ -176,10 +185,13 @@
                                 <input type="password" class="form-control" id="password" placeholder="Enter password">
                             </div>
                             <div class="form-group">
-                                <label for="role">Role</label>
+                                <label for="role">Moderator Category</label>
                                 <select class="form-control" id="role">
-                                    <option value="admin">Admin</option>
-                                    <option value="moderator">Moderator</option>
+                                    <option value="politics">Politics</option>
+                                    <option value="sports">Sports</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="health">Health</option>
+
                                 </select>
                             </div>
                         </div>
